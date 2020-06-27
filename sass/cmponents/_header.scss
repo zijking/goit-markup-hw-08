@@ -1,0 +1,97 @@
+.header {
+  background-color: $white-text;
+  border-bottom: 1px solid #ececec;
+}
+
+.header > .nav {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-pages {
+  display: flex;
+
+  color: $black-text;
+}
+.site-pages .item {
+  margin-right: 50px;
+}
+.site-pages > .item a,
+.contact-link > .item a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-link > .item a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-pages > .item:last-child {
+  margin: 0;
+}
+
+.item.flex {
+  display: flex;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact-link > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-letter {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphote {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.active.page.set::after,
+.site-pages > .item > a:hover::after,
+.site-pages > .item > a:focus::after {
+  opacity: 1;
+}
+
+.site-pages > .item > a::after {
+  content: '';
+  width: 100%;
+  opacity: 0;
+  height: 4px;
+  background-color: $blue-text;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  transition: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+.active.page {
+  color: $blue-text;
+  position: relative;
+}
+.site-pages > .item > a {
+  position: relative;
+}
+
+

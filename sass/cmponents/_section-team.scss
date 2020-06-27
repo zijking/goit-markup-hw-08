@@ -1,0 +1,84 @@
+.section-team {
+  @extend %section;
+}
+
+.section-team h2 {
+  @extend %section-h2;
+}
+
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.profesion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.list-team {
+  display: flex;
+}
+
+.list-team > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-social-network {
+  display: flex;
+  margin-left: 35px;
+  margin-right: 35px;
+
+  justify-content: space-around;
+  padding-bottom: 38px;
+}
+
+.list-social-network a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+}
+.list-social-network a:hover,
+.list-social-network a:focus {
+  background-color: $blue-text;
+  color: $white-text;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  --color1: currentColor;
+}
+
+.list-social-network a:hover,
+.list-social-network a:focus {
+  background-color: $blue-text;
+  color: $white-text;
+}
+
+.list-team > .item {
+  background-color: $white-text;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}

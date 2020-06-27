@@ -1,0 +1,35 @@
+.hero h1 {
+  color: $white-text;
+
+  width: 646px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+  background-color: rgba(47, 48, 58, 0.8);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/header-img.jpg');
+
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
