@@ -17,7 +17,8 @@
   transition: color;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $blue-text;
     fill: currentColor;
   }

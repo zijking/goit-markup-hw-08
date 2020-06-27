@@ -1,4 +1,4 @@
-@import './base/normalize';
+// @import './base/normalize';
 @import './utils/variables';
 @import './utils/universal-class';
 @import './utils/placeholders';
@@ -8,15 +8,6 @@
 @import './base/address';
 
 @import './cmponents/container';
-@import './cmponents/logo';
 @import './cmponents/header';
-@import './cmponents/section-hero';
-@import './cmponents/button';
-@import './cmponents/modal';
-@import './cmponents/section-strong-side';
-@import './cmponents/section-we-do';
-
-@import './cmponents/section-team';
-@import './cmponents/section-customers';
-@import './cmponents/footer';
-@import './cmponents/section-portfolio';
+@import './cmponents/logo';
+@import './cmponents/menu';
