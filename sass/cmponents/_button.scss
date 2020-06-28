@@ -15,18 +15,19 @@
   border: 1px solid rgba(255, 255, 255, 0);
 }
 
-.button-form{
+.button-form {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 29px;
   font-weight: 700;
 }
 
 .button-modal {
   font-weight: 700;
   display: inline-flex;
-  align-items: center;  
+  align-items: center;
   padding: 10px 55px;
 }
-
-
 
 .button-form .icon {
   margin-left: 10px;
