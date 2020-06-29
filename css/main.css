@@ -1221,7 +1221,6 @@ footer {
   padding-left: 16px;
   margin-bottom: 20px;
   color: #ffffff;
-  min-width: 358px;
   max-width: 434px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1232,10 +1231,17 @@ footer {
   display: inline-block;
 }
 
+@media screen and (max-width: 479px) {
+  .input {
+    padding-left: 2px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .input {
     margin-bottom: 0;
     margin-right: 12px;
+    width: 358px;
   }
 }
 

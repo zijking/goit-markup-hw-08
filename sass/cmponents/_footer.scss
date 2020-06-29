@@ -102,14 +102,13 @@ footer {
 }
 
 .input {
-  //   margin-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  //   margin-left: 15px;
+
   margin-bottom: 20px;
   color: $white-text;
-  min-width: 358px;
+
   max-width: 434px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -118,8 +117,13 @@ footer {
   background: $darck-grey;
   display: inline-block;
 
+  @media screen and (max-width: 479px) {
+    padding-left: 2px;
+  }
+
   @media screen and (min-width: $desktop-screen) {
     margin-bottom: 0;
     margin-right: 12px;
+    width: 358px;
   }
 }
