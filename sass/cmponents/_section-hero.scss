@@ -1,6 +1,6 @@
 .hero h1 {
   color: $white-text;
-  max-width: 480px;
+  max-width: $mobil-screen;
   min-width: 360px;
   font-weight: 900;
   font-size: 26px;
@@ -12,11 +12,15 @@
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: $tablet-screen) {
+    max-width: $tablet-screen;
+  }
 }
 
 .hero {
   text-align: center;
-  
+
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
@@ -33,16 +37,36 @@
       ),
       url('../images/header-img-480@2x.jpg');
     background-size: cover;
+
+    @media screen and (min-width: $tablet-screen) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/header-img-768@2x.jpg');
+    }
   }
 
   background-repeat: no-repeat;
-
   max-width: 480px;
   max-height: 400px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $tablet-screen) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/header-img-768.jpg');
+
+    max-width: $tablet-screen;
+  }
 }
 .hero-container {
   padding-top: 118px;
   padding-bottom: 118px;
+
+  @media screen and (min-width: $tablet-screen) {
+  }
 }

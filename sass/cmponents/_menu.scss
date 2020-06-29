@@ -48,4 +48,15 @@
   &.is-open {
     display: block;
   }
+
+  @media screen and (min-width: $tablet-screen) {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    box-shadow: none;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+  }
 }

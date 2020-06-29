@@ -14,6 +14,10 @@
   &:visited {
     @extend %a;
   }
+  @media screen and (min-width: 768px) {
+    margin-right: 81px;
+    white-space: nowrap;
+  }
 }
 
 .list-footer .logo {

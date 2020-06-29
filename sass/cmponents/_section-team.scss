@@ -36,12 +36,26 @@
   margin-bottom: 30px;
 }
 
-// .list-team {
-//   display: flex;
-// }
+.list-team {
+  @media screen and (min-width: $tablet-screen) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
 .list-team > .item:not(:last-child) {
   margin-bottom: 30px;
+  @media screen and (min-width: $tablet-screen) {
+    margin-bottom: 15px;
+  }
+}
+
+.list-team > .item {
+  @media screen and (min-width: $tablet-screen) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .list-social-network {

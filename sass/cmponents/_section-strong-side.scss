@@ -3,12 +3,21 @@
 //   align-items: center;
 // }
 
-// .strong-side-list > li:not(:last-child) {
-//   margin-right: 30px;
-// }
-
-.section-strong-side{
-    @extend %section;
+.strong-side-list {
+  @media screen and (min-width: $tablet-screen) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.strong-side-list > li {
+  @media screen and (min-width: $tablet-screen) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+.section-strong-side {
+  @extend %section;
 }
 
 .icon-antena,
