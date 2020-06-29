@@ -32,8 +32,10 @@ footer {
     flex-wrap: wrap;
   }
 
-  // justify-content: space-between;
-  // align-items: baseline;
+  @media screen and (min-width: $desktop-screen) {
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .list-footer > .item {
@@ -41,8 +43,14 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 60px;
+
   @media screen and (min-width: $tablet-screen) {
     width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: $desktop-screen) {
+    width: auto;
+    text-align: left;
   }
 }
 
@@ -88,6 +96,9 @@ footer {
 
 .form {
   width: 100%;
+  @media screen and (min-width: $desktop-screen) {
+    display: flex;
+  }
 }
 
 .input {
@@ -106,4 +117,9 @@ footer {
   border-radius: 4px;
   background: $darck-grey;
   display: inline-block;
+
+  @media screen and (min-width: $desktop-screen) {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }

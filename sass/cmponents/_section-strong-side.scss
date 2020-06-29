@@ -15,6 +15,10 @@
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }
+
+  @media screen and (min-width: $desktop-screen) {
+    width: calc((100% - 4 * 30px) / 4);
+  }
 }
 .section-strong-side {
   @extend %section;

@@ -34,6 +34,10 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop-screen) {
+    margin-bottom: 16px;
+  }
 }
 
 .list-team {
@@ -56,6 +60,10 @@
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }
+
+  @media screen and (min-width: $desktop-screen) {
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 .list-social-network {
@@ -65,6 +73,11 @@
 
   justify-content: space-around;
   padding-bottom: 24px;
+
+  @media screen and (min-width: $desktop-screen) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .list-social-network a {

@@ -4,6 +4,10 @@
 
 .section-customers {
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop-screen) {
+    padding-bottom: 94px;
+  }
 }
 .section-customers h2 {
   @extend %section-h2;
@@ -30,6 +34,10 @@
   border-radius: 4px;
 
   transition: color 250ms $timing-function, border 250ms $timing-function;
+
+  @media screen and (min-width: $desktop-screen) {
+    width: 170px;
+  }
 }
 
 .icon-customer {

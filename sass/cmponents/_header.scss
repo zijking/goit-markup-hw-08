@@ -43,8 +43,12 @@
 }
 
 .contact-link > .item a {
-  // display: inline-flex;
-  // align-items: center;
+  @media screen and (min-width: $desktop-screen) {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .site-pages > .item:first-child {
@@ -68,16 +72,23 @@
     margin-bottom: 10px;
     text-align: left;
   }
+  @media screen and (min-width: $desktop-screen){
+    margin-bottom:0;
+  }
 }
 
 .item.flex {
-  // display: flex;
+  @media screen and (min-width: $desktop-screen) {
+    display: flex;
+  }
 }
 
 .contact-link {
-  // display: flex;
-  // align-items: center;
-  // margin-left: auto;
+  @media screen and (min-width: $desktop-screen) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .site-pages > .item:not(:last-child) {
@@ -86,7 +97,9 @@
   }
 }
 .contact-link > .item:not(:last-child) {
-  // margin-right: 30px;
+  @media screen and (min-width: $desktop-screen) {
+    margin-right: 30px;
+  }
 }
 
 .icon-letter {
