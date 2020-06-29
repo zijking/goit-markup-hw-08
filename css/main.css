@@ -1329,6 +1329,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .list-portfolio > .item {
+    width: calc((100% - 90px) / 3);
+  }
+}
+
 .list-portfolio > .item > a {
   display: block;
   border-radius: 5px;

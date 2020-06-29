@@ -68,6 +68,11 @@
   @media screen and (min-width: $tablet-screen) {
     width: calc((100% - 60px) / 2);
   }
+
+   @media screen and (min-width: $desktop-screen){
+     width: calc((100% - 90px) / 3);
+   }
+
 }
 
 .list-portfolio > .item > a {
