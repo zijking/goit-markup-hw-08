@@ -40,23 +40,6 @@
         rgba(47, 48, 58, 0.8)
       ),
       url('../images/header-img-480@2x.jpg');
-    background-size: cover;
-
-    @media screen and (min-width: $tablet-screen) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.8),
-          rgba(47, 48, 58, 0.8)
-        ),
-        url('../images/header-img-768@2x.jpg');
-    }
-
-    @media screen and (min-width: $desktop-screen) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.8),
-          rgba(47, 48, 58, 0.8)
-        ),
-        url('../images/header-img-1200@2x.jpg');
-    }
   }
 
   background-repeat: no-repeat;
@@ -73,7 +56,17 @@
       ),
       url('../images/header-img-768.jpg');
 
-    max-width: $tablet-screen;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/header-img-768@2x.jpg');
+
+      max-width: $tablet-screen;
+    }
   }
 
   @media screen and (min-width: $desktop-screen) {
@@ -82,6 +75,14 @@
         rgba(47, 48, 58, 0.8)
       ),
       url('../images/header-img-1200.jpg');
+
+    @media screen and (min-width: $desktop-screen) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/header-img-1200@2x.jpg');
+    }
 
     max-width: 1600px;
     max-height: none;
