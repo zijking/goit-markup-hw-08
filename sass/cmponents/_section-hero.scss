@@ -24,8 +24,14 @@
 
 .hero {
   text-align: center;
-
   background-color: rgba(47, 48, 58, 0.8);
+  background-repeat: no-repeat;
+  max-width: 480px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
@@ -42,13 +48,6 @@
       url('../images/header-img-480@2x.jpg');
   }
 
-  background-repeat: no-repeat;
-  max-width: 480px;
-  max-height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-
   @media screen and (min-width: $tablet-screen) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
@@ -64,9 +63,8 @@
           rgba(47, 48, 58, 0.8)
         ),
         url('../images/header-img-768@2x.jpg');
-
-      max-width: $tablet-screen;
     }
+    max-width: $tablet-screen;
   }
 
   @media screen and (min-width: $desktop-screen) {
